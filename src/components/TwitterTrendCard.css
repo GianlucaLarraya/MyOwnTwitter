@@ -1,0 +1,15 @@
+.sectiontrends {
+    display: flex;
+    flex-direction: column;
+    border-style: none;
+}
+
+.theme {
+    color:gray;
+    font-size: 10px;
+}
+
+.trend {
+    font-size:15px;
+    font-weight: 700;
+}
