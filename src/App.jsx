@@ -1,65 +1,15 @@
+import './App.css'
+import { useState} from 'react';
 import TwitterFollowCard from './components/TwitterFollowCard.jsx'
 import TwitterTrendCard from './components/TwitterTrendCard.jsx'
-import './App.css'
 import TweetCard from './components/TweetCard.jsx'
-
-import { useState} from 'react';
-
-const trends = [
-  {
-    trend:"Argentina Wins World Cup",
-    numberoftweets:"900mil",
-    theme:"Football"
-
-  }, 
-  {
-    trend:"Financial Crisis",
-    numberoftweets:"323mil",
-    theme:"Economy"
-
-  }
-]
-
-const users = [
-  {
-    name:"Midudev",
-    userName:"midudev",
-    isFollowing: true,
-
-  }, 
-  {
-    name:"David",
-    userName:"pheralb",
-    isFollowing: false,
-
-  }
-]
-
+import {trends} from './data'
+import {users} from './data'
+import {tweetsdatabase} from './data'
 
 const App = () => {
 
-  const [ tweets, setTweets] = useState([
-    {
-      name:"Malfettt",
-      userName:"malfet",
-      tweet:"Hola Mundo!",
-      retweets:20,
-      isRetweeted: false,
-      likes:130,
-      isLiked: false,
-  
-    }, 
-    {
-      name:"David",
-      userName:"jerryjliu",
-      tweet:"@silviaparlato hola chica",
-      retweets:500,
-      isRetweeted: false,
-      likes:1200,
-      isLiked: false,
-  
-    }
-  ])  
+  const [ tweets, setTweets] = useState(tweetsdatabase)  
 
   const [ newTweet, setNewTweet] = useState('')
 
