@@ -45,6 +45,7 @@ img {
 
 .statsnumbers {
     font-size: 15px;
+    color:white
 }
 
 svg{
@@ -60,7 +61,7 @@ svg{
 }
 
 .ret-false {
-    fill: white;
+    fill: white ;
     width: 20px;
     height: 20px;
 }
@@ -72,7 +73,7 @@ svg{
 }
 
 .like-false {
-    fill: white;
+    fill: white ;
     width: 20px;
     height: 20px;
 }
